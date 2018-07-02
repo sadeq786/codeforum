@@ -88,7 +88,7 @@ const users = [
     }
 ];
 
-db.codeForum
+db.User
   .remove({})
   .then(() => db.codeForum.collection.insertMany(posts))
   .then(data => {
@@ -100,3 +100,5 @@ db.codeForum
     console.error(err);
     process.exit(1);
   });
+
+// add joins for comments and posts to user. 

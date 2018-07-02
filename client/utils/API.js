@@ -4,7 +4,7 @@ import axios from "axios";
 
 export default {
   // Gets all posts, like scraper
-  getPosts: function() {
+  getAllPosts: function() {
     return axios.get("/api/posts");
   },
   // Gets the post with the given id
@@ -17,6 +17,6 @@ export default {
   },
   // Saves a post to the database using react form data
   savePost: function(postData) {
-    return axios.post("/api/books", formData);
+    return axios.post("/api/posts", formData);
   }
 };
